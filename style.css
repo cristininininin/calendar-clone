@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f1ee;
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 10px;
+}
+
+
+/* Main Calendar Container */
+
+.calendar-app {
+    width: 100%;
+    max-width: 700px;
+
+    background-color: black;
+
+    border-radius: 20px;
+
+    padding: 30px;
+
+    box-shadow: 0 8px 25px rgb(249, 248, 248);
+}
+
+
+/* Header */
+
+.calendar-header {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 25px;
+}
+
+.title-section h1 {
+    font-size: 25px;
+
+    color: white;
+
+    margin-bottom: 5px;
+}
+
+.title-section p {
+    color: white;
+
+    font-size: 15px;
+}
+
+
+/* Today Button */
+
+.today-button {
+    border: none;
+
+    background-color: white;
+
+    color: black;
+
+    padding: 10px 18px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-size: 15px;
+
+    transition: 0.2s;
+}
+
+.today-button:hover {
+    background-color: white;
+}
+
+
+/* Month Navigation */
+
+.month-navigation {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 20px;
+}
+
+.month-navigation h2 {
+    font-size: 40px;
+
+    color: white;
+}
+
+
+/* Navigation Buttons */
+
+.nav-button {
+    width: 40px;
+    height: 40px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background-color: #f1e6e9;
+
+    color: #000000;
+
+    font-size: 20px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.nav-button:hover {
+    background-color: white;
+
+    color: #000000;
+}
+
+
+/* Calendar */
+
+.calendar {
+    width: 100%;
+}
+
+
+/* Weekdays */
+
+.weekdays {
+    display: grid;
+
+    grid-template-columns: repeat(7, 1fr);
+
+    margin-bottom: 8px;
+}
+
+.weekdays div {
+    text-align: center;
+
+    font-weight: bold;
+
+    color: white;
+
+    font-size: 14px;
+
+    padding: 10px 0;
+}
+
+
+/* Calendar Dates */
+
+.calendar-days {
+    display: grid;
+
+    grid-template-columns: repeat(7, 1fr);
+
+    gap: 6px;
+}
+
+
+/* Date Button */
+
+.calendar-day {
+    height: 55px;
+
+    border: none;
+
+    background-color: transparent;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    font-size: 15px;
+
+    color: white;
+
+    transition: 0.2s;
+}
+
+.calendar-day:hover {
+    background-color: #f1e6e9;
+
+    color: #000000;
+}
+
+
+/* Empty Days */
+
+.empty-day {
+    height: 55px;
+}
+
+
+/* Today's Date */
+
+.calendar-day.today {
+    background-color: white;
+
+    color: #000000;
+
+    font-weight: bold;
+}
+
+.calendar-day.today:hover {
+    background-color: white;
+}
+
+
+/* Selected Date */
+
+.calendar-day.selected {
+    border: 2px solid #000000;
+
+    font-weight: bold;
+}
+
+
+/* When Today is Selected */
+
+.calendar-day.today.selected {
+    border: 3px solid #d6a6b5;
+}
+
+/* Mobile Design */
+
+@media (max-width: 500px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .calendar-app {
+        padding: 20px;
+
+        border-radius: 15px;
+    }
+
+    .title-section h1 {
+        font-size: 26px;
+    }
+
+    .month-navigation h2 {
+        font-size: 20px;
+    }
+
+    .calendar-day {
+        height: 45px;
+
+        font-size: 13px;
+    }
+
+    .empty-day {
+        height: 45px;
+    }
+
+    .weekdays div {
+        font-size: 12px;
+    }
+
+}
