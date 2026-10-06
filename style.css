@@ -6,6 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
+
     background-color: #f4f1ee;
 
     min-height: 100vh;
@@ -77,6 +78,10 @@ body {
 
     font-size: 15px;
 
+    text-decoration: none;
+
+    display: inline-block;
+
     transition: 0.2s;
 }
 
@@ -120,6 +125,14 @@ body {
     font-size: 20px;
 
     cursor: pointer;
+
+    text-decoration: none;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
 
     transition: 0.2s;
 }
@@ -189,6 +202,14 @@ body {
 
     color: white;
 
+    text-decoration: none;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
     transition: 0.2s;
 }
 
@@ -235,6 +256,7 @@ body {
 .calendar-day.today.selected {
     border: 3px solid #d6a6b5;
 }
+
 
 /* Mobile Design */
 
